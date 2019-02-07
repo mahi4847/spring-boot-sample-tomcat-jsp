@@ -24,19 +24,3 @@ spec:
         - containerPort: 80
     strategy:
     type: RollingUpdate
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: monitoring-app-c
-  namespace: avengers
-  labels:
-    app: monitoring-app
-spec:
-  type: NodePort
-  ports:
-    port: 8080
-    targetPort: 8080
-    nodePort: 30100
-  selector:
-    app: monitoring-app
