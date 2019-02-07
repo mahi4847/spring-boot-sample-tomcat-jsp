@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: monitoring-app
@@ -6,7 +6,7 @@ metadata:
   labels:
     build_number: ${BUILD_NUMBER}
     app: monitoring-app
-    role: rolling-update
+    - role: rolling-update
 spec:
   replicas: 1
   selector:
@@ -22,5 +22,5 @@ spec:
         image: mahi4847/monitoring-app:latest
         ports:
         - containerPort: 80
-    strategy:
-    type: RollingUpdate
+    - strategy:
+    - type: RollingUpdate
