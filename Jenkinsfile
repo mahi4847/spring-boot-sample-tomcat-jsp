@@ -17,7 +17,7 @@ pipeline{
     			script{
     				app = docker.build("mahi4847/monitoring-app")
     				app.inside{
-    				sh 'echo $(curl http://54.121.95.266:30001)'
+    				//sh 'echo $(curl http://54.121.95.266:30001)'
     				}
     			}
     		}
@@ -32,5 +32,17 @@ pipeline{
     			}
     		}
     	}
+        stage('Deploy kubernetes'){
+          steps {
+		  container('kubectl') {
+		  	sh 'kubectl delete -f application.yaml'
+		  }
+             kubernetesDeploy(
+                kubeconfigId: 'kubeconfig',
+                configs: 'application.yaml',
+                enableConfigSubstitution: false)
+                //echo 'App url: http://54.186.233.130:30026'
+          }
+       }
     }
 }
