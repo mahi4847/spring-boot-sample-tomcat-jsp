@@ -1,10 +1,12 @@
-apiVersion: apps/v1beta1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: monitoring-app
   namespace: avengers
   labels:
+    build_number: ${BUILD_NUMBER}
     app: monitoring-app
+    role: rolling-update
 spec:
   replicas: 1
   selector:
@@ -20,6 +22,8 @@ spec:
         image: mahi4847/monitoring-app:latest
         ports:
         - containerPort: 80
+    strategy:
+    type: RollingUpdate
 ---
 apiVersion: v1
 kind: Service
@@ -31,9 +35,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - protocol: TCP
-    port: 80
+  - port: 80
     targetPort: 80
-    nodePort: 30007
+    nodePort: 30008
   selector:
     app: monitoring-app
