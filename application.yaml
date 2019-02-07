@@ -2,7 +2,7 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: monitoring-app
-  namespace: pirates
+  namespace: avengers
   labels:
     app: monitoring-app
 spec:
