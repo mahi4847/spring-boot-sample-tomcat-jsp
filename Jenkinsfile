@@ -8,7 +8,7 @@ pipeline{
     	stage('Build'){
     		steps {
                 echo 'Running build automation'
-                sh 'mvn clean package'
+                sh 'mvn -B -DskipTests clean package'
                 archiveArtifacts artifacts: 'target/spring-boot-sample-tomcat-jsp*.war'
     		}
     	}
@@ -38,7 +38,7 @@ pipeline{
                 kubeconfigId: 'kubeconfig',
                 configs: 'application.yaml',
                 enableConfigSubstitution: true)
-                echo 'App url: http://54.186.233.130:31008'
+                echo 'App url: http://54.186.233.130:31008/'
           }
         }
     }
