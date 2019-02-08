@@ -11,6 +11,11 @@ pipeline{
                 archiveArtifacts artifacts: 'target/spring-boot-sample-tomcat-jsp*.war'
     		}
     	}
+        stage('SonarQube Code Analysis') {
+            steps {
+                sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+              }
+        }
     	stage('Build Docker Image'){
     		steps{
     			script{
