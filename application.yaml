@@ -20,3 +20,4 @@ spec:
         image: mahi4847/monitoring-app:latest
         ports:
         - containerPort: 80
+---
