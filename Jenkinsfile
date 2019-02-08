@@ -32,17 +32,14 @@ pipeline{
     			}
     		}
     	}
-       stage('Deploy kubernetes'){
+        stage('Deploy kubernetes'){
           steps {
-		  container('kubectl') {
-		  	sh 'kubectl delete -f application.yaml'
-		  }
-             kubernetesDeploy(
+           kubernetesDeploy(
                 kubeconfigId: 'kubeconfig',
                 configs: 'application.yaml',
-                enableConfigSubstitution: false)
+                enableConfigSubstitution: true)
                 echo 'App url: http://54.186.233.130:30008'
           }
-       }
+        }
     }
 }
