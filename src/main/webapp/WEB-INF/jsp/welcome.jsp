@@ -51,6 +51,10 @@ tr:nth-child(even) {
 	    <td>3</td>
 	    <td>Application performance</td>
 	  </tr>
+	 <tr>
+	    <td>4</td>
+	    <td>MTTD</td>
+	  </tr>
 
 	</table>
 </body>
