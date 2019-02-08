@@ -39,6 +39,34 @@ public class WelcomeController {
 		model.put("message", this.message);
 		return "welcome";
 	}
+	
+	@RequestMapping("/user")
+	public String getUser(Map<String, Object> model) {
+		model.put("time", new Date());
+		model.put("message", this.message);
+		return "user";
+	}
+	
+	@RequestMapping("/user1")
+	public String getUser1(Map<String, Object> model) {
+		model.put("time", new Date());
+		model.put("message", this.message);
+		return "user1";
+	}
+	
+	@RequestMapping("/user2")
+	public String getUser2(Map<String, Object> model) {
+		model.put("time", new Date());
+		model.put("message", this.message);
+		return "user2";
+	}
+	
+	@RequestMapping("/home")
+	public String getHome(Map<String, Object> model) {
+		model.put("time", new Date());
+		model.put("message", this.message);
+		return "home";
+	}
 
 	@RequestMapping("/fail")
 	public String fail() {
