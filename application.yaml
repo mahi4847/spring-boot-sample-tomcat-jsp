@@ -4,9 +4,7 @@ metadata:
   name: monitoring-app
   namespace: avengers
   labels:
-    build_number: ${BUILD_NUMBER}
     app: monitoring-app
-    - role: rolling-update
 spec:
   replicas: 1
   selector:
@@ -22,5 +20,3 @@ spec:
         image: mahi4847/monitoring-app:latest
         ports:
         - containerPort: 80
-    - strategy:
-    - type: RollingUpdate
