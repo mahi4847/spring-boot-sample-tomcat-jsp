@@ -13,7 +13,7 @@ pipeline{
     	}
         stage('SonarQube Code Analysis') {
             steps {
-                sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+                sh 'mvn -Dsonar.host.url=http://54.186.233.130:9000 org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
               }
         }
     	stage('Build Docker Image'){
