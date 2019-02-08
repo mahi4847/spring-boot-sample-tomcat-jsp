@@ -32,7 +32,7 @@ pipeline{
     			}
     		}
     	}
-        stage('Deploy kubernetes'){
+       /** stage('Deploy kubernetes'){
           steps {
 		  container('kubectl') {
 		  	sh 'kubectl delete -f application.yaml'
@@ -43,6 +43,6 @@ pipeline{
                 enableConfigSubstitution: false)
                 //echo 'App url: http://54.186.233.130:30026'
           }
-       }
+       }**/
     }
 }
