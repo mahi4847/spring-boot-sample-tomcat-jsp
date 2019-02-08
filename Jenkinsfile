@@ -41,7 +41,7 @@ pipeline{
                 kubeconfigId: 'kubeconfig',
                 configs: 'application.yaml',
                 enableConfigSubstitution: false)
-                //echo 'App url: http://54.186.233.130:30026'
+                echo 'App url: http://54.186.233.130:30008'
           }
        }
     }
