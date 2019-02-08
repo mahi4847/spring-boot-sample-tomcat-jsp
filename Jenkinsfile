@@ -32,7 +32,7 @@ pipeline{
     			}
     		}
     	}
-        stage('Deploy kubernetes'){
+        /**stage('Deploy kubernetes'){
           steps {
            kubernetesDeploy(
                 kubeconfigId: 'kubeconfig',
@@ -40,6 +40,6 @@ pipeline{
                 enableConfigSubstitution: true)
                 echo 'App url: http://54.186.233.130:31008'
           }
-        }
+        }**/
     }
 }
