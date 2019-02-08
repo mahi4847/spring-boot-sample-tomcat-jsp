@@ -3,7 +3,7 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /usr/src/app
 COPY . ./
 #expose port 8080	
-EXPOSE 8080
+EXPOSE 80
 
 #default command
 #CMD java -jar /data/monitoring-rest-app-0.1.0.jar
