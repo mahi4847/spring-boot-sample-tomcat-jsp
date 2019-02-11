@@ -23,7 +23,7 @@ tr:nth-child(even) {
 }
 h2 { 
   display: block;
-  color: blue;
+  color: red;
 }
 </style>
 </head>
@@ -57,7 +57,7 @@ h2 {
 	  </tr>
 	 <tr>
 	    <td>4</td>
-	    <td>MTTD-Value %</td>
+	    <td>MTTD Value</td>
 	  </tr>
 
 	</table>
