@@ -4,7 +4,7 @@ metadata:
   name: monitoring-app
   namespace: avengers
   labels:
-    build_number: ${BUILD_NUMBER}
+  - build_number: ${BUILD_NUMBER}
     app: monitoring-app
     role: rolling-update
 spec:
