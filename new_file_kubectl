@@ -1,0 +1,40 @@
+root@ip-10-0-1-18 java_simple_test]# cat deply.yml
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: monitoring-app
+  namespace: avengers
+  labels:
+    app: monitoring-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monitoring-app
+  template:
+    metadata:
+      labels:
+        app: monitoring-app
+    spec:
+      containers:
+      - name: smpprj
+        image: mahi4847/monitoring-app:latest
+        ports:
+        - containerPort: 8080
+[root@ip-10-0-1-18 java_simple_test]# cat serv.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: monitoring-app
+  namespace: avengers
+  labels:
+    run: monitoring-app
+spec:
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+    nodePort: 31007
+  selector:
+    app: monitoring-app
