@@ -13,7 +13,7 @@ pipeline{
     	}
         stage('SonarQube Code Analysis') {
             steps {
-                sh "mvn sonar:sonar -Dsonar.host.url=http://54.186.233.130:30002"
+                sh "mvn sonar:sonar -Dsonar.host.url=http://54.188.213.9:30002"
               }
         }
     	stage('Build Docker Image'){
@@ -42,7 +42,7 @@ pipeline{
                 kubeconfigId: 'kubeconfig',
                 configs: 'application.yaml',
                 enableConfigSubstitution: true)
-                echo 'App url: http://54.186.233.130:31008/'
+                //echo 'App url: http://54.188.213.9:31008/'
           }
         }
     }
