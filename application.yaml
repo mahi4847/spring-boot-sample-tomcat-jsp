@@ -27,7 +27,7 @@ metadata:
   name: monitoring-app
   namespace: avengers
   labels:
-    app: monitoring-app
+    run: monitoring-app
 spec:
   type: NodePort
   ports:
