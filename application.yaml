@@ -4,9 +4,7 @@ metadata:
   name: monitoring-app
   namespace: avengers
   labels:
-  - build_number: ${BUILD_NUMBER}
-    app: monitoring-app
-    role: rolling-update
+    app: monitoring-app    
 spec:
   replicas: 1
   selector:
@@ -22,20 +20,19 @@ spec:
         image: mahi4847/monitoring-app:latest
         ports:
         - containerPort: 8080
-    strategy:
-    type: RollingUpdate
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: monitoring-app-c
+  name: monitoring-app
   namespace: avengers
   labels:
     app: monitoring-app
 spec:
   type: NodePort
   ports:
-  - port: 8080
+  - protocol: TCP
+    port: 8080
     targetPort: 8080
     nodePort: 31008
   selector:
