@@ -40,6 +40,7 @@ pipeline{
           steps {
            kubernetesDeploy(
                 kubeconfigId: 'kubeconfig',
+               sh 'kubectl delete -f application.yaml'
                 configs: 'application.yaml',
                 enableConfigSubstitution: true)
                 //echo 'App url: http://54.188.213.9:31008/'
