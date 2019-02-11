@@ -38,6 +38,7 @@ pipeline{
     	}
         stage('Deploy kubernetes'){
           steps {
+              sh 'kubectl delete -f application.yml --namespace=avengers'
            kubernetesDeploy(
                 kubeconfigId: 'kubeconfig',
                 configs: 'application.yaml',
