@@ -21,6 +21,10 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+h2 { 
+  display: block;
+  color: blue;
+}
 </style>
 </head>
 <body>
@@ -53,7 +57,7 @@ tr:nth-child(even) {
 	  </tr>
 	 <tr>
 	    <td>4</td>
-	    <td>MTTD-Value</td>
+	    <td>MTTD-Value %</td>
 	  </tr>
 
 	</table>
