@@ -1,0 +1,12 @@
+ 1013  kubectl get pods
+ 1014  kubectl get pods --namespace=avengers
+ 1015  kubectl delete -f serv.yml --namespace=avengers
+ 1016  kubectl delete -f deply.yml --namespace=avengers
+ 1017  cd ..
+ 1018  kubectl get pods --namespace=avengers
+ 1019  ls
+ 1020  kubectl
+ 1021  kubectl create -f deply.yml --namespace=avengers
+ 1022  cd -
+ 1023  kubectl create -f deply.yml --namespace=avengers
+ 1024  kubectl create -f serv.yml --namespace=avengers
