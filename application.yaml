@@ -4,6 +4,7 @@ metadata:
   name: monitoring-app
   namespace: avengers
   labels:
+    - build_number: ${BUILD_NUMBER}
     app: monitoring-app
     role: rolling-update
 spec:
@@ -27,14 +28,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: monitoring-app
+  name: monitoring-app-c
   namespace: avengers
   labels:
     app: monitoring-app
 spec:
   type: NodePort
   ports:
-    port: 8080
+  - port: 8080
     targetPort: 8080
     nodePort: 31008
   selector:
