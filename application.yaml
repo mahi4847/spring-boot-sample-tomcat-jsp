@@ -34,6 +34,6 @@ spec:
   - protocol: TCP
     port: 8080
     targetPort: 8080
-    nodePort: 31008
+    nodePort: 31006
   selector:
     app: monitoring-app
