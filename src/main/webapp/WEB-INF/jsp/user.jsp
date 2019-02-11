@@ -7,6 +7,6 @@
 <body>
 	<c:url value="/resources/text.txt" var="url"/>
 	<spring:url value="/resources/text.txt" htmlEscape="true" var="springUrl" />
-  <h2> Hello User</h2>
+  <h2> Hello Use!!!r</h2>
 </body>
 </html>
