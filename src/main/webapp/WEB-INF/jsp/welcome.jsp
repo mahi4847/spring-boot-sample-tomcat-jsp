@@ -53,7 +53,7 @@ tr:nth-child(even) {
 	  </tr>
 	 <tr>
 	    <td>4</td>
-	    <td>MTTD</td>
+	    <td>MTTD Vaue</td>
 	  </tr>
 
 	</table>
