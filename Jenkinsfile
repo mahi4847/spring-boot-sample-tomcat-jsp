@@ -12,14 +12,11 @@ pipeline{
                 archiveArtifacts artifacts: 'target/spring-boot-sample-tomcat-jsp*.war'
     		}
     	}
-        //stage('JUnit Test') {
-         //   steps {
-         //       sh "mvn test"
-         //     }
-       // }
-        stage('Publish test results') {
-            junit 'target/surefire-reports/*.xml'
-        } 
+        stage('JUnit Test') {
+           steps {
+                junit 'target/surefire-reports/*.xml'
+              }
+        }
         stage('SonarQube Code Analysis') {
             steps {
                 sh "mvn sonar:sonar -Dsonar.host.url=http://54.185.178.109:30002"
