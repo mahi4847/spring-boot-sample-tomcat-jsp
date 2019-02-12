@@ -13,7 +13,7 @@ pipeline{
     	}
         stage('SonarQube Code Analysis') {
             steps {
-                sh "mvn sonar:sonar -Dsonar.host.url=http://54.188.213.9:30002"
+                sh "mvn sonar:sonar -Dsonar.host.url=http://54.185.178.109:30002"
               }
         }
     	stage('Build Docker Image'){
