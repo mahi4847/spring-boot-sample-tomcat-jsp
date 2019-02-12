@@ -11,17 +11,17 @@ pipeline{
                 archiveArtifacts artifacts: 'target/spring-boot-sample-tomcat-jsp*.war'
     		}
     	}
+        //stage('JUnit Test') {
+         //   steps {
+         //       sh "mvn test"
+         //     }
+       // }
         stage('SonarQube Code Analysis') {
             steps {
                 sh "mvn sonar:sonar -Dsonar.host.url=http://54.185.178.109:30002"
               }
         }
-        stage('JUnit Test') {
-            steps {
-                sh "mvn clean test"
-              }
-        }
-    	stage('Build Docker Image'){
+        stage('Build Docker Image'){
     		steps{
     			script{
     				app = docker.build("mahi4847/monitoring-app")
