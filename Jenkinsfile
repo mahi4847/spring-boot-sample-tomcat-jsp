@@ -7,7 +7,8 @@ pipeline{
     	stage('Build'){
     		steps {
                 echo 'Running build automation'
-                sh 'mvn -B -DskipTests clean package'
+                //sh 'mvn -B -DskipTests clean package'
+                sh 'mvn clean package'
                 archiveArtifacts artifacts: 'target/spring-boot-sample-tomcat-jsp*.war'
     		}
     	}
@@ -16,6 +17,9 @@ pipeline{
          //       sh "mvn test"
          //     }
        // }
+        stage('Publish test results') {
+            junit 'target/surefire-reports/*.xml'
+        } 
         stage('SonarQube Code Analysis') {
             steps {
                 sh "mvn sonar:sonar -Dsonar.host.url=http://54.185.178.109:30002"
