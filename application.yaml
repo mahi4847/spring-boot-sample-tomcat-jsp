@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: monitoring-app
-        image: mahi4847/monitoring-app:latest
+        image: mahi4847/monitoring-app:$(BUILD_NUMBER)
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
