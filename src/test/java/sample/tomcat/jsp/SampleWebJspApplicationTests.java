@@ -53,8 +53,30 @@ public class SampleWebJspApplicationTests {
 		assertTrue("Wrong body:\n" + entity.getBody(),
 				entity.getBody().contains("/resources/text.txt"));
 	}
-	/**@Test
+	@Test
 	public void testJspWithE2() throws Exception {
-		assertEquals(HttpStatus.OK, 200);
-	}**/
+		assertTrue(true);
+	}
+	@Test
+	public void testJspWithE3() throws Exception {
+		assertTrue(true);
+	}
+	@Test
+	public void testJspWithE4() throws Exception {
+		assertTrue(true);
+	}
+	@Ignore
+	@Test
+	public void testJspWithE5() throws Exception {
+		assertTrue(true);
+	}
+	@Ignore
+	@Test
+	public void testJspWithE6() throws Exception {
+		assertTrue(true);
+	}
+	@Test
+	public void testJspWithE7() throws Exception {
+		assertTrue(true);
+	}
 }
