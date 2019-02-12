@@ -3,7 +3,7 @@ FROM openjdk:8-jdk-alpine
 # Add Maintainer Info
 MAINTAINER Mahendra <mahi4847@gmail.com>
 
-ADD VERSION .
+#ADD VERSION .
 # Add a volume pointing to /tmp
 VOLUME /tmp
 # Make port 8080 available to the world outside this container
