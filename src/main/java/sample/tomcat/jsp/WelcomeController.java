@@ -32,6 +32,8 @@ public class WelcomeController {
 
 	@Value("${application.message:Hello World}")
 	private String message = "Hello World";
+	String username = "testuname";
+	String password = "testpwd";
 
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
