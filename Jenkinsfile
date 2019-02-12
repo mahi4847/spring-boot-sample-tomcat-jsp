@@ -18,7 +18,7 @@ pipeline{
         }
         stage('JUnit Test') {
             steps {
-                sh "mvn test"
+                sh "mvn clean test"
               }
         }
     	stage('Build Docker Image'){
