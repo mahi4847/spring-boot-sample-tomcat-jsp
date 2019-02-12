@@ -14,15 +14,48 @@ public class SeleniumAutoTest {
   public void openMyBlog() {
 // 	driver.get("http://35.166.134.157:8080/user");
   }
-  @Test
+  @Test(enabled=false)
   public void testController1() {
 // 	driver.get("http://35.166.134.157:8080/user");
   }
  
-  @Test
+  @Test(enabled=false)
   public void testController2() {
 // 	driver.get("http://35.166.134.157:8080/user");
   }
+ @Test(enabled=false)
+  public void testController3() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ @Test
+  public void testController4() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ @Test
+  public void testController5() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ @Test
+  public void testController6() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ @Test
+  public void testController7() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ @Test
+  public void testController8() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ @Test
+  public void testController9() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ @Test
+  public void testController10() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ 
   @BeforeClass
   public void beforeClass() {
    
