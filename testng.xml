@@ -3,7 +3,7 @@
   <test name="Test">
     <classes>
       <class name="sample.tomcat.jsp.SeleniumAutoTest"/>
-      <class name="sample.tomcat.jsp.SeleniumAutoTest1"/>
+      <class name="sample.tomcat.jsp.SeleniumAutoTest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
