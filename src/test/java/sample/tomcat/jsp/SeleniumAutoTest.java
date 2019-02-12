@@ -14,7 +14,15 @@ public class SeleniumAutoTest {
   public void openMyBlog() {
 // 	driver.get("http://35.166.134.157:8080/user");
   }
-  
+  @Test
+  public void testController1() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
+ 
+  @Test
+  public void testController2() {
+// 	driver.get("http://35.166.134.157:8080/user");
+  }
   @BeforeClass
   public void beforeClass() {
    
