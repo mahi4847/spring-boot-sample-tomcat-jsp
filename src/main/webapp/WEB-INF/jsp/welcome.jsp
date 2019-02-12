@@ -23,7 +23,7 @@ tr:nth-child(even) {
 }
 h2 { 
   display: block;
-  color: red;
+  color: blue;
 }
 </style>
 </head>
