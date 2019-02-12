@@ -17,6 +17,7 @@
 package sample.tomcat.jsp;
 
 import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
 
 import org.springframework.beans.factory.annotation.Value;
