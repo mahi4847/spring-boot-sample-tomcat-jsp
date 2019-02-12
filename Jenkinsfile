@@ -4,7 +4,7 @@ pipeline{
         maven 'maven'
      }
     stages{
-    	stage('Build'){
+    	stage('Build and Test'){
     		steps {
                 echo 'Running build automation'
                 //sh 'mvn -B -DskipTests clean package'
@@ -12,7 +12,7 @@ pipeline{
                 archiveArtifacts artifacts: 'target/spring-boot-sample-tomcat-jsp*.war'
     		}
     	}
-        stage('JUnit Test') {
+        stage('Publish Test Results') {
            steps {
                 junit 'target/surefire-reports/*.xml'
               }
