@@ -16,6 +16,11 @@ pipeline{
                 sh "mvn sonar:sonar -Dsonar.host.url=http://54.185.178.109:30002"
               }
         }
+        stage('JUnit Test') {
+            steps {
+                sh "mvn test"
+              }
+        }
     	stage('Build Docker Image'){
     		steps{
     			script{
