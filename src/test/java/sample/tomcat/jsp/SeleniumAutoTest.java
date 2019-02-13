@@ -3,6 +3,7 @@ package sample.tomcat.jsp;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
  
@@ -14,13 +15,15 @@ public class SeleniumAutoTest {
   public void openMyBlog() {
 // 	driver.get("http://35.166.134.157:8080/user");
   }
-  @Test(enabled=false)
+  @Test
   public void testController1() {
+   Assert.assertTrue(false);
 // 	driver.get("http://35.166.134.157:8080/user");
   }
  
-  @Test(enabled=false)
+  @Test
   public void testController2() {
+   Assert.assertTrue(false);
 // 	driver.get("http://35.166.134.157:8080/user");
   }
  @Test(enabled=false)
@@ -29,6 +32,7 @@ public class SeleniumAutoTest {
   }
  @Test
   public void testController4() {
+   Assert.assertTrue(true);
 // 	driver.get("http://35.166.134.157:8080/user");
   }
  @Test
