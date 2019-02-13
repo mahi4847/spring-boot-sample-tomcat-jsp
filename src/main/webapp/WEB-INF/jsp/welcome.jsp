@@ -36,30 +36,29 @@ h2 {
 	<br>
 	Message: ${message}-->
 	
-	<h2>Monitoring Metrics at ${time}</h2>
+	<h2>Avengers - Monitoring Dashboards!!!</h2>
 
 	<table>
 	  <tr>
 	    <th>SNO</th>
-	    <th>Metric Name</th>
+	    <th>Report Name</th>
 	   </tr>
 	  <tr>
 	    <td>1</td>
-	    <td>Deployment Frequency</td>
+	    <td>SonarQube</td>
 	  </tr>
 	  <tr>
 	    <td>2</td>
-	    <td>Automated test pass %</td>
+	    <td>Jenkins</td>
 	  </tr>
 	  <tr>
 	    <td>3</td>
-	    <td>Application performance</td>
+	    <td>kubernetes</td>
 	  </tr>
 	 <tr>
 	    <td>4</td>
-	    <td>MTTD Value (%)</td>
+	    <td>Testcase execution</td>
 	  </tr>
-
 	</table>
 </body>
 
