@@ -14,8 +14,8 @@ pipeline{
     	}
         stage('SonarQube Code Analysis') {
             steps {
-                //sh "mvn sonar:sonar -Dsonar.host.url=http://54.185.178.109:30002"
-                sh "mvn sonar:sonar -Dsonar.host.url=http://54.201.96.142:9000"
+                sh "mvn sonar:sonar -Dsonar.host.url=http://54.190.168.185:30002"
+                //sh "mvn sonar:sonar -Dsonar.host.url=http://54.201.96.142:9000"
               }
         }
         stage('Test and Publish Results') {
