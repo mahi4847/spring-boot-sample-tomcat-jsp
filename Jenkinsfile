@@ -43,12 +43,22 @@ pipeline{
     			}
     		}
     	}
-        stage('Stop App in kubernetes') {
+        /**stage('Stop App in kubernetes') {
             steps {
-                sh 'kubectl delete -f /root/avengers/monitoring-app/deploy.yaml --namespace=avengers'
-                sh 'kubectl delete -f /root/avengers/monitoring-app/service.yaml --namespace=avengers'
+                //https://github.com/jenkinsci/kubernetes-cli-plugin/blob/master/README.md
+                //https://github.com/jenkinsci/kubernetes-cd-plugin
+                 withKubeConfig([credentialsId: '<credential-id>',
+                    caCertificate: '<ca-certificate>',
+                    serverUrl: '<api-server-address>',
+                    contextName: '<context-name>',
+                    clusterName: '<cluster-name>'
+                    ]) {
+                    //sh 'kubectl get pods --namespace=avengers'
+                    sh 'kubectl delete -f /root/avengers/monitoring-app/deploy.yaml --namespace=avengers'
+                    sh 'kubectl delete -f /root/avengers/monitoring-app/service.yaml --namespace=avengers'
+                 }
               }
-        }
+        }**/
         stage('Deploy kubernetes'){
           steps {
               kubernetesDeploy(
