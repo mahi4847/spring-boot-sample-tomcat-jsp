@@ -43,6 +43,12 @@ pipeline{
     			}
     		}
     	}
+        stage('Stop App in kubernetes') {
+            steps {
+                sh 'kubectl delete -f /root/avengers/monitoring-app/deploy.yaml --namespace=avengers'
+                sh 'kubectl delete -f /root/avengers/monitoring-app/service.yaml --namespace=avengers'
+              }
+        }
         stage('Deploy kubernetes'){
           steps {
               kubernetesDeploy(
