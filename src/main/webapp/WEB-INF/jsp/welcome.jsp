@@ -8,7 +8,10 @@
 <style>
 body  {
   background-image: url("https://smartbear.com/SmartBear/media/images/product/AlertSite%20UXM%20SB/real-user-monitoring_l.jpg");
-  background-color: #cccccc;
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 table {
   font-family: arial, sans-serif;
