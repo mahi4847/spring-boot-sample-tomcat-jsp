@@ -7,7 +7,7 @@
 <head>
 <style>
 body  {
-  background-image: url("real-user-monitoring_l_logo.jpg");
+  background-image: url("https://smartbear.com/SmartBear/media/images/product/AlertSite%20UXM%20SB/real-user-monitoring_l.jpg");
   background-color: #cccccc;
 }
 table {
