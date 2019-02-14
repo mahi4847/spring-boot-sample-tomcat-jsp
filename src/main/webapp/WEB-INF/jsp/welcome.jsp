@@ -47,9 +47,8 @@ h1 {
 	JSTL URL: ${url}
 	<br>
 	Message: ${message}-->
-	<h1><img src="https://i.ebayimg.com/images/g/uKgAAOSwLdBaOoyd/s-l300.jpg" alt="logo" width="100" height="100" /> Monitoring Dashboards!!!</h1>
-	
-	<table width="400">
+	<center><h1><img src="https://seeklogo.com/images/T/the-avengers-capitao-america-logo-72B7C58836-seeklogo.com.png" alt="logo" width="100" height="100" />Monitoring Dashboards!!!</h1></center>
+	<table width="300">
 	  <tr>
 	    <th>SNO</th>
 	    <th>Report Name</th>
