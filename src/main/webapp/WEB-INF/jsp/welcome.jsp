@@ -35,7 +35,7 @@ tr:nth-child(odd) {
 }*/
 h1 { 
   display: block;
-  color: blue;
+  color: #CD33FF;
 }
 </style>
 </head>
