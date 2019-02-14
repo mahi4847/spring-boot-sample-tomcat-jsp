@@ -49,14 +49,14 @@ public class WelcomeController {
 		return "user";
 	}
 	
-	@RequestMapping("/user1")
+	@RequestMapping("/metrics")
 	public String getUser1(Map<String, Object> model) {
 		model.put("time", new Date());
 		model.put("message", this.message);
 		return "user1";
 	}
 	
-	@RequestMapping("/user2")
+	@RequestMapping("/prometheus")
 	public String getUser2(Map<String, Object> model) {
 		model.put("time", new Date());
 		model.put("message", this.message);
