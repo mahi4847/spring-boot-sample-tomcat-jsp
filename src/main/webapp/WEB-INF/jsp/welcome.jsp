@@ -20,6 +20,7 @@ table {
 }
 td, th {
   border: 1px solid black;
+  font-weight: bold;
   text-align: left;
   padding: 8px;
 }
@@ -47,8 +48,8 @@ h1 {
 	JSTL URL: ${url}
 	<br>
 	Message: ${message}-->
-	<center><h1><img src="https://seeklogo.com/images/T/the-avengers-capitao-america-logo-72B7C58836-seeklogo.com.png" alt="logo" width="100" height="100" />Monitoring Dashboards!!!</h1></center>
-	<table width="300">
+	<center><img src="https://seeklogo.com/images/T/the-avengers-capitao-america-logo-72B7C58836-seeklogo.com.png" alt="logo" width="200" height="200" /><h1>Monitoring Dashboards!!!</h1></center>
+	<table width="100">
 	  <tr>
 	    <th>SNO</th>
 	    <th>Report Name</th>
@@ -67,7 +68,15 @@ h1 {
 	  </tr>
 	 <tr>
 	    <td>4</td>
-	    <td>Testcase execution</td>
+	    <td>Prometheus</td>
+	  </tr>
+      	<tr>
+	    <td>5</td>
+	    <td>Alert Manager</td>
+	  </tr>
+	 <tr>
+	    <td>6</td>
+	    <td>Slack</td>
 	  </tr>
 	</table>
 </body>
