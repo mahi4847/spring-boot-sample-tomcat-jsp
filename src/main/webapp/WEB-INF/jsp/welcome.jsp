@@ -6,6 +6,10 @@
 <html lang="en">
 <head>
 <style>
+body  {
+  background-image: url("/resources/real-user-monitoring_l_logo.jpg");
+  background-color: #cccccc;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
