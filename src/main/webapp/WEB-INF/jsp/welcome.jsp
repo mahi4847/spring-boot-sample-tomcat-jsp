@@ -18,17 +18,22 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid black;
   text-align: left;
   padding: 8px;
 }
-
-tr:nth-child(even) {
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+/*tr:nth-child(even) {
   background-color: #dddddd;
 }
-h2 { 
+tr:nth-child(odd) {
+  background-color: #f2f2f2;;
+}*/
+h1 { 
   display: block;
   color: blue;
 }
@@ -42,9 +47,8 @@ h2 {
 	JSTL URL: ${url}
 	<br>
 	Message: ${message}-->
+	<h1><img src="aveng_logo.jpg" alt="logo" width="100" height="100" /> Monitoring Dashboards!!!</h1>
 	
-	<h2>Avengers - Monitoring Dashboards!!!</h2>
-
 	<table>
 	  <tr>
 	    <th>SNO</th>
