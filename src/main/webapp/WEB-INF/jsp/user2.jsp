@@ -7,6 +7,6 @@
 <body>
 	<c:url value="/resources/text.txt" var="url"/>
 	<spring:url value="/resources/text.txt" htmlEscape="true" var="springUrl" />
-  <h2> Hello User2</h2>
+ <h1>Prometheus works fine!!!</h1>
 </body>
 </html>
