@@ -7,7 +7,7 @@
 <head>
 <style>
 body  {
-  background-image: url("/resources/real-user-monitoring_l_logo.jpg");
+  background-image: url("real-user-monitoring_l_logo.jpg");
   background-color: #cccccc;
 }
 table {
