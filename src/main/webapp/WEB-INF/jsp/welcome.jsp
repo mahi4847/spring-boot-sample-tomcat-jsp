@@ -48,7 +48,7 @@ h1 {
 	JSTL URL: ${url}
 	<br>
 	Message: ${message}-->
-	<center><img src="https://seeklogo.com/images/T/the-avengers-capitao-america-logo-72B7C58836-seeklogo.com.png" alt="logo" width="100" height="100" /><h1>Monitoring Dashboards!!!</h1></center>
+	<center><img src="https://seeklogo.com/images/T/the-avengers-capitao-america-logo-72B7C58836-seeklogo.com.png" alt="logo" width="100" height="100" /><h1>Welcome to Monitoring Dashboards!!!</h1></center>
 	<table width="100">
 	  <tr>
 	    <th>SNO</th>
